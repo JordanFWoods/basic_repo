@@ -1,0 +1,41 @@
+################################################################################
+# General files
+################################################################################
+
+################################################################################
+# Simulation files
+################################################################################
+# Compile libraries
+**/lib/work
+**/lib/fmf
+**/lib/*_lib
+**/lib/osvvm
+**/lib/results
+**/lib/transcript
+
+# Script generated files
+# Local working files
+# Scenario files
+################################################################################
+# Vivado project files
+################################################################################
+# Generated files
+**/imp/*.log
+**/imp/*.rpt
+**/imp/*.hw/
+**/imp/*.srcs/sources_*/bd/
+**/imp/*.cache/
+**/imp/*.ip_user_files/
+**/imp/*.runs/
+**/imp/*.sim/
+**/.Xil/*
+
+################################################################################
+# Vivado IP files
+################################################################################
+# Ignore all IP generated files except sim netlist so sims can run without
+# having to generate in Vivado.  Also track .xci files (IP definition file used
+# by Vivado to generate other files).
+# **/coregen/*/**
+# !**/coregen/*/*_sim_netlist.vhdl
+# !**/coregen/*/*.xci
